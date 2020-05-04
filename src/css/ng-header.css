@@ -1,0 +1,18 @@
+.ng-header {
+    height: 7vh;
+    background: linear-gradient(darkslateblue, #8536e2);
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 5vh;
+    text-align: center;
+}
+
+.prof {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: inherit;
+    height: 7vh;
+    width: 7vh;
+    padding: 0;
+}
