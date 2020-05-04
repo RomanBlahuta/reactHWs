@@ -1,0 +1,31 @@
+.options {
+    margin-left: 10vw;
+}
+
+.options li {
+    list-style-type: none;
+    float: left;
+    margin-right: 3vw;
+}
+
+.option {
+    font-family: 'Permanent Marker', cursive;
+    background-color: plum;
+    color: indigo;
+    border-radius: 25px;
+    border-color: darkslateblue;
+    width: 10vw;
+    height: 14vh;
+    font-size: 9vh;
+}
+
+.option:hover {
+    background-color: indigo;
+    color: plum;
+}
+
+@media screen and (max-width:1500px) {
+    .options li {
+        float: bottom;
+    }
+}
