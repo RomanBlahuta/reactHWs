@@ -26,7 +26,6 @@ export default class NGProfile extends React.Component {
                     <li> <div className="ng-prof-block"> <button className="menuBtn">&nbsp; &#9726; Learn</button> </div> </li>
                     <li> <div className="ng-prof-block"> <button className="menuBtn">&nbsp; &#9726; Tests</button> </div> </li>
                     <li> <div className="ng-prof-block"> <button className="menuBtn">&nbsp; &#9726; Vocabulary</button> </div> </li>
-                    <li> <div className="ng-prof-block"> <button className="menuBtn">&nbsp; &#9726; My Notes</button> </div> </li>
                     <li> <div className="ng-prof-block"> <button className="menuBtn">&nbsp; &#9726; Settings</button> </div> </li>
                 </ul>
             </div>

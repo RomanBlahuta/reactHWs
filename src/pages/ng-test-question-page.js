@@ -11,7 +11,7 @@ import NGProfile from "../components/ng-profile";
 import NGContent from "../components/ng-content";
 import NGFooter from "../components/ng-footer";
 
-export default class NGTestQuestionPage extends React.Component {
+export default class NGTestQuestionPage extends React.PureComponent {
 
     constructor(props) {
         super(props);
@@ -39,12 +39,14 @@ export default class NGTestQuestionPage extends React.Component {
         else {
             this.setState(state => ({profClicked: !this.state.profClicked, profPic: homeW, bg: "linear-gradient(darkslateblue, #8536e2)"}));
         }
+        console.log(this.state);
     }
 
     nextQuestion() {
-        //todo
-        this.setState(state => ({qnum: this.state.qnum + 1}));
+        this.setState((state) => {return {qnum: state.qnum + 1}});
+        this.forceUpdate()
         alert("Good Choice!")
+        console.log(this.state);
     }
 
     render() {
@@ -55,7 +57,7 @@ export default class NGTestQuestionPage extends React.Component {
                 <NGContent top="20vh" left="20vw" width={this.state.contentWidth} height="60vh" contents={
                     <div className="ng-content-container">
                     <p className="test-preview"><h1> Question #{this.state.qnum} <br /></h1> <br />
-                        {this.state.question}
+                        {this.state.question[this.state.qnum]}
                     </p>
 
                     <ul className="options">

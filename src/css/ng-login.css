@@ -18,6 +18,11 @@
     font-size: 2.5vh;
 }
 
+.ng-name {
+    height: 0.5vh;
+    width: 10vw;
+}
+
 .ng-email {
     height: 0.5vh;
     width: 18vw;
@@ -41,6 +46,8 @@
 
 .submit-btn:hover {
     cursor: pointer;
+    background-color: mediumorchid;
+    color: #1e0839;
 }
 
 .submit-btn:active {
@@ -77,10 +84,11 @@
 
 .login-navbar-btn:hover {
     cursor: pointer;
+    background-color: mediumorchid;
 }
 
 .login-navbar-btn:active {
-    background-color: darkslateblue;
+    background-color: #a934c6;
 }
 
 .help-ico {
