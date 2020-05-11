@@ -7,7 +7,6 @@ export default class NGLogin extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            action: props.name,
             email: "",
             password: "",
             fname: "",
@@ -20,7 +19,6 @@ export default class NGLogin extends React.Component {
 
     handleLogIn(event) {
         event.preventDefault();
-        this.setState({})
         const inputs = event.target.getElementsByTagName("input");
         this.setState({
             email: inputs.email.value,
@@ -31,7 +29,6 @@ export default class NGLogin extends React.Component {
 
     handleSignUp(event) {
         event.preventDefault();
-        this.setState({})
         const inputs = event.target.getElementsByTagName("input");
         this.setState({
             email: inputs.email.value,
@@ -42,10 +39,8 @@ export default class NGLogin extends React.Component {
 
     }
 
-
-
     renderRedirect() {
-        if (this.state.action == "Sign Up") {
+        if (this.props.name == "Sign Up") {
             if (this.state.fname && this.state.lname && this.state.email && this.state.password) {
                 alert(`Signed In as ${this.state.fname} ${this.state.lname}!\nEmail: ${this.state.email}\nPassword: ${this.state.password}`);
                 return (<Redirect exact to="/home"></Redirect>)
@@ -60,7 +55,7 @@ export default class NGLogin extends React.Component {
     }
 
     render() {
-        if (this.state.action == "Log In") {
+        if (this.props.name == "Log In") {
             return (
                 <div className="Login">
                     <form onSubmit={this.handleLogIn}>
@@ -72,7 +67,7 @@ export default class NGLogin extends React.Component {
                         <input type="password" name="password" className="ng-password"/><br/><br/>
 
                         <button type="submit" className="submit-btn" formAction="/home" onSubmit={this.handleLogIn}>
-                            {this.state.action}
+                            {this.props.name}
                         </button>
                     </form>
 
@@ -98,7 +93,7 @@ export default class NGLogin extends React.Component {
                         <input type="password" name="password" className="ng-password"/><br/><br/>
 
                         <button type="submit" className="submit-btn" formAction="/home" onSubmit={this.handleSignUp}>
-                            {this.state.action}
+                            {this.props.name}
                         </button>
                     </form>
 

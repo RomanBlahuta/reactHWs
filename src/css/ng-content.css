@@ -8,7 +8,16 @@
 
 .ng-content p.main {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 3vh;
+    font-size: 30px;
     color: #1e0839;
     margin-left: 2vw;
+}
+
+.kanatable {
+    width: 95%;
+    margin-left: 1.5%;
+}
+
+.kanatable:hover {
+    cursor: pointer;
 }

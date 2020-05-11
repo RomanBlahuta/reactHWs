@@ -95,5 +95,7 @@
     color: whitesmoke;
 }
 
-
-
+.prof:hover {
+    cursor: pointer;
+    border-color: #ff95fe;
+}

@@ -1,7 +1,8 @@
 import React from 'react';
 
 import "../css/ng-profile.css"
-import avatar from "./avatarGhost.png"
+import avatar from "./img/avatarGhost.png"
+import { Link } from "react-router-dom";
 
 export default class NGProfile extends React.Component {
 
@@ -22,11 +23,10 @@ export default class NGProfile extends React.Component {
                         </ul>
                     </div>
                     </li>
-                    <li> <div className="ng-prof-block"> <button className="menuBtn">&nbsp; &#9726; Main Page</button> </div> </li>
-                    <li> <div className="ng-prof-block"> <button className="menuBtn">&nbsp; &#9726; Learn</button> </div> </li>
-                    <li> <div className="ng-prof-block"> <button className="menuBtn">&nbsp; &#9726; Tests</button> </div> </li>
-                    <li> <div className="ng-prof-block"> <button className="menuBtn">&nbsp; &#9726; Vocabulary</button> </div> </li>
-                    <li> <div className="ng-prof-block"> <button className="menuBtn">&nbsp; &#9726; Settings</button> </div> </li>
+                    <li> <div className="ng-prof-block"> <Link exact to="/home"><button className="menuBtn">&nbsp; &#9726; Home Page</button></Link> </div> </li>
+                    <li> <div className="ng-prof-block"> <Link exact to="/learn"><button className="menuBtn">&nbsp; &#9726; Learn</button></Link> </div> </li>
+                    <li> <div className="ng-prof-block"> <Link exact to="/home/test"><button className="menuBtn">&nbsp; &#9726; Tests</button> </Link> </div> </li>
+                    <li> <div className="ng-prof-block"> <Link exact to="/home/vocab"><button className="menuBtn">&nbsp; &#9726; Vocabulary</button></Link> </div> </li>
                 </ul>
             </div>
         );

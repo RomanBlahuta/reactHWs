@@ -1,8 +1,8 @@
 import React from 'react';
 
 import NGHeader from "../components/ng-header";
-import redBG from "./dawnJap.jpg";
-import ngLogo from "../components/flowerlogo.png"
+import redBG from "./img/dawnJap.jpg";
+import ngLogo from "../components/img/flowerlogo.png"
 import "../css/ng-index.css"
 
 import { Link } from 'react-router-dom';

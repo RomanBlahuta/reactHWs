@@ -11,7 +11,7 @@ import NGProfile from "../components/ng-profile";
 import NGContent from "../components/ng-content";
 import NGFooter from "../components/ng-footer";
 
-export default class NGHomePage extends React.Component {
+export default class NGVocabPage extends React.Component {
 
     constructor(props) {
         super(props);
@@ -20,7 +20,14 @@ export default class NGHomePage extends React.Component {
             profClicked: true,
             profPic: profileW,
             bg: "linear-gradient(darkslateblue, #8536e2)",
-            contentWidth: "70vw"
+            contentWidth: "70vw",
+            vocab: (<div><span style={{fontSize: "4vh"}}>火 - Fire;</span><br />
+        <span style={{fontSize: "4vh"}}>水 - Water;</span><br />
+        <span style={{fontSize: "4vh"}}>土 - Earth;</span><br />
+        <span style={{fontSize: "4vh"}}>風 - Wind;</span><br />
+        <span style={{fontSize: "4vh"}}>雷 - Lightning;</span><br />
+        <span style={{fontSize: "4vh"}}>日 - Day, Sun;</span><br />
+        <span style={{fontSize: "4vh"}}>こんにちは - Good afternoon, Hello;</span><br /></div>)
         }
 
         this.handleClick = this.handleClick.bind(this)
@@ -41,15 +48,10 @@ export default class NGHomePage extends React.Component {
                 <NGHeader></NGHeader>
                 <section className="bg-default"></section>
                 <div><button style={{background: this.state.bg}} onClick={this.handleClick} className="prof"><img style={{width: "95%", height: "90%", margin:"0"}} src={this.state.profPic}/></button></div>
-            <NGProfile name="Roman" surname="Blahuta" status="Slowly going insane..." visible={!this.state.profClicked ? true : false}></NGProfile>
+                <NGProfile name="Roman" surname="Blahuta" status="Slowly going insane..." visible={!this.state.profClicked ? true : false}></NGProfile>
                 <NGContent left="15vw" width={this.state.contentWidth} height="89.4vh" contents={
-                    <p className="main"><h1>Here will be some content! <br /><br /> Example:</h1> <br />
-                    Here are some basic kanji:<br />
-                    <span style={{color: "red", fontSize: "10vh"}}>火 - Fire</span><br />
-                    <span style={{color: "blue", fontSize: "10vh"}}>水 - Water</span><br />
-                    <span style={{color: "brown", fontSize: "10vh"}}>土 - Earth</span><br />
-                    <span style={{color: "lime", fontSize: "10vh"}}>風 - Wind</span><br />
-                    <span style={{color: "gold", fontSize: "10vh"}}>雷 - Lightning</span><br />
+                    <p className="main"><h1>Here is your current vocabulary! <br /></h1> <br />
+                        {this.state.vocab}
                     </p>
                 }>  </NGContent>
                 <NGFooter></NGFooter>

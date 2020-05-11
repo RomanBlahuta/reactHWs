@@ -10,15 +10,14 @@ export default class NGContent extends React.Component {
             height: props.height,
             width: props.width,
             top: props.top,
-            left: props.left,
-            contents: props.contents
+            left: props.left
         }
     }
 
     render() {
         return (
             <div className="ng-content" style={{height: this.state.height, width: this.state.width, left:this.state.left, top:this.state.top}}>
-                {this.state.contents}
+                {this.props.contents}
             </div>
         );
     }

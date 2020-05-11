@@ -2,7 +2,7 @@ import React from 'react';
 
 import AccBox from "../components/ng-account-box";
 import NGLogoBR from "../components/ng-logoBR";
-import helpIco from "../components/help.png"
+import helpIco from "../components/img/help.png";
 import { Link } from "react-router-dom";
 
 class NGLogINPageNavBar extends React.Component {
@@ -11,7 +11,6 @@ class NGLogINPageNavBar extends React.Component {
         super();
     }
 
-    //todo
     render() {
         return (
         <div className="nb-container">
@@ -30,13 +29,12 @@ export default class NGLogINPage extends React.PureComponent {
 
     constructor(props){
         super(props);
-        this.buttonText = props.name;
     }
 
     render() {
         return (
             <div>
-                <AccBox name={this.buttonText}></AccBox>
+                <AccBox name={this.props.name}></AccBox>
                 <NGLogoBR></NGLogoBR>
                 <NGLogINPageNavBar></NGLogINPageNavBar>
             </div>

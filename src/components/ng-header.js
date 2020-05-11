@@ -1,7 +1,7 @@
 import React from 'react';
 
 import "../css/ng-header.css"
-import flogo from "./flowerlogo.png"
+import flogo from "./img/flowerlogo.png"
 
 export default class NGHeader extends React.Component {
     render() {
