@@ -1,0 +1,10 @@
+.in-text-btn {
+    font-size: inherit;
+    border-radius: 25px;
+}
+
+.in-text-btn:hover {
+    color: red;
+    background-color: #edbff8;
+    cursor: pointer;
+}

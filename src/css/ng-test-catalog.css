@@ -1,0 +1,44 @@
+.tests-k .catalog-test-option {
+    width: 12vw;
+    height: 7vh;
+    font-family: 'Permanent Marker', cursive;
+    background: linear-gradient(darkred, crimson);
+    font-size: 3vh;
+    color: ghostwhite;
+}
+
+.tests-h .catalog-test-option {
+    width: 12vw;
+    height: 7vh;
+    font-family: 'Permanent Marker', cursive;
+    background: linear-gradient(#0f1d63, #0b9dd7);
+    font-size: 3vh;
+    color: ghostwhite;
+}
+
+.tests-kj .catalog-test-option {
+    width: 12vw;
+    height: 7vh;
+    font-family: 'Permanent Marker', cursive;
+    background: linear-gradient(orangered, goldenrod);
+    font-size: 3vh;
+    color: ghostwhite;
+}
+
+.tests-kj .catalog-test-option:hover, .tests-h .catalog-test-option:hover, .tests-k .catalog-test-option:hover {
+    background: linear-gradient(black, indigo);
+    color: #cf69e8;
+    cursor: pointer;
+    border-color: #cf69e8;
+}
+
+.tests-h, .tests-k, .tests-kj {
+    margin-left: 20%;
+    padding: 0;
+}
+
+.tests-h li, .tests-k li, .tests-kj li {
+    float: left;
+    list-style-type: none;
+    margin-right: 2vw;
+}

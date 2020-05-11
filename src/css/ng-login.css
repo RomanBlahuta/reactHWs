@@ -1,0 +1,113 @@
+@media all and (min-width: 480px) {
+    .Login {
+        padding: 4vw 0;
+        width: 31vw;
+        height: 20vw;
+    }
+
+    .Login form {
+        margin: 0 auto;
+        width: 30vw;
+        height: 18vw;
+    }
+}
+
+.lgLabel {
+    font-family: 'Permanent Marker', cursive;
+    color: #1e0839;
+    font-size: 2.5vh;
+}
+
+.ng-name {
+    height: 0.5vh;
+    width: 10vw;
+}
+
+.ng-email {
+    height: 0.5vh;
+    width: 18vw;
+}
+
+.ng-password {
+    height: 0.5vh;
+    width: 18vw;
+}
+
+.submit-btn {
+    font-family: 'Permanent Marker', cursive;
+    background-color: #1e0839;
+    color: white;
+    border-radius: 25px;
+    border-color: darkslateblue;
+    width: 7vw;
+    height: 5vh;
+    font-size: 2vh;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    background-color: mediumorchid;
+    color: #1e0839;
+}
+
+.submit-btn:active {
+    background-color: #4f4695;
+}
+
+.nb-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.login-navbar {
+    display:inline;
+    padding: 0;
+    margin: 0;
+}
+
+.login-navbar li {
+    float: left;
+    list-style-type: none;
+    margin: 0;
+}
+
+.login-navbar-btn {
+    border-style: solid;
+    border-color: darkslateblue;
+    background-color: #1e0839;
+    color: white;
+    height: 40px;
+    width: 120px;
+    font-size: 22px;
+}
+
+.login-navbar-btn:hover {
+    cursor: pointer;
+    background-color: mediumorchid;
+}
+
+.login-navbar-btn:active {
+    background-color: #a934c6;
+}
+
+.help-ico {
+    width: 35px;
+    height: 35px;
+    margin: 0;
+}
+
+@media screen and (max-width:1500px) {
+    .submit-btn {
+        width:100px;
+    }
+    .ng-email, .ng-password {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:815px) {
+    .login-navbar-btn {
+        width: 33.32vw;
+    }
+}

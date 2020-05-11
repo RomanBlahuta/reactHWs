@@ -1,0 +1,41 @@
+.test-preview {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3vh;
+    color: #1e0839;
+    margin-left: 2vw;
+    text-align: center;
+}
+
+.test-preview h1 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.start-btn {
+    font-family: 'Permanent Marker', cursive;
+    background-color: orangered;
+    color: white;
+    border-radius: 25px;
+    border-color: mediumpurple;
+    width: 14vw;
+    height: 12vh;
+    font-size: 7vh;
+    margin-top: 5vh;
+}
+
+.start-btn:hover {
+    cursor: pointer;
+    background-color: #ff6428;
+}
+
+.start-btn:active {
+    background-color: mediumpurple;
+    color: #1e0839;
+}
+
+@media screen and (max-width:1500px) {
+    .start-btn {
+        width:100px;
+        height: 60px;
+        font-size: 20px;
+    }
+}

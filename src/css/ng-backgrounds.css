@@ -1,0 +1,29 @@
+.bg-alternative {
+    height: 100vh;
+    width: 100vw;
+    background: url("../pages/img/dawnJap.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: auto;
+    position: fixed;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+}
+
+.bg-default {
+    height: 100vh;
+    width: 100vw;
+    background: url("../pages/img/duskJap.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: auto;
+    position: fixed;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+}
